@@ -1,7 +1,6 @@
 from collections.abc import Generator
 
 
-
 def filter_by_currency(transactions: list[dict], currency: str) -> Generator[dict]:
     """
         Функция-генератор возвращает итератор, отфильтрованный по ключу 'currency'
