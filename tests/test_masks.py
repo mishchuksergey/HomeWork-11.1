@@ -61,4 +61,3 @@ def test_test_get_mask_account_vrong(account_vrong):
             str(exc_info.value)
             == "Ошибка при вводе номера счета. Введите правильный номер счета:"
         )
-        

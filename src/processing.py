@@ -24,4 +24,3 @@ def sort_by_date(dictionary: list[dict], ascending=True) -> list[dict]:
     except Exception:
         print("Ошибка в дате")
         raise Exception
-    

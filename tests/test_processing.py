@@ -74,4 +74,3 @@ def test_sort_by_date_vrong(vrong_date):
     with pytest.raises(Exception) as exc_info:
         sort_by_date(vrong_date)
         assert str(exc_info.exception) == "Ошибка в дате"
-        
