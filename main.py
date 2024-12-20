@@ -29,6 +29,7 @@ for i in range(2):
 descriptions = transaction_descriptions(transactions)
 for i in range(5):
     print(next(descriptions))
-#г  генерируем номер карты в диапазоне от 0000 0000 0000 0001 до 9999 9999 9999 9999.
+
+# генерируем номер карты в диапазоне от 0000 0000 0000 0001 до 9999 9999 9999 9999.
 for card_number in card_number_generator(1, 5):
     print(card_number)

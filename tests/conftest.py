@@ -112,3 +112,4 @@ def list_transactions_not_usd():
 @pytest.fixture
 def list_transactions_empty():
     return []
+
