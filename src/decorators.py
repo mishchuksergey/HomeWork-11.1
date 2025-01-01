@@ -8,7 +8,7 @@ def log(filename=None):
         def inner(*args, **kwargs):
             try:
                 result = func(*args, **kwargs)
-                message = f"{func.__name__} ok"
+                massage = f"{func.__name__} ok"
             except Exception as err:
                 massage = f"{func.__name__} error: {err}. Inputs {args}, {kwargs}"
             # Если задан параметр filename
@@ -17,7 +17,7 @@ def log(filename=None):
                 os.makedirs("logs", exist_ok=True)
                 filepath = os.path.join("logs", f"{filename}")
                 with open(filepath, "a", encoding="utf-8") as file :
-                    file.write(message + "\n")
+                    file.write(massage + "\n")
             # Если не задан параметр filename
             else:
                 print(massage)
