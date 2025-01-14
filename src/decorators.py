@@ -16,18 +16,21 @@ def log(filename=None):
                 # Создаем папку logs и записываем сообщение в файл
                 os.makedirs("logs", exist_ok=True)
                 filepath = os.path.join("logs", f"{filename}")
-                with open(filepath, "a", encoding="utf-8") as file :
-                    file.write(massage+ "\n")
+                with open(filepath, "a", encoding="utf-8") as file:
+                    file.write(massage + "\n")
             # Если не задан параметр filename
             else:
                 print(massage)
             return result
+
         return inner
+
     return wrapper
 
 
 @log(filename="mylog.txt")
 def my_function(x, y):
     return x + y
+
 
 my_function(1, 2)
