@@ -17,7 +17,7 @@ def log(filename=None):
                 os.makedirs("logs", exist_ok=True)
                 filepath = os.path.join("logs", f"{filename}")
                 with open(filepath, "a", encoding="utf-8") as file :
-                    file.write(massage + "\n")
+                    file.write(massage+ "\n")
             # Если не задан параметр filename
             else:
                 print(massage)
